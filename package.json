@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shakeib98/telegramBotPractice/issues"
   },
-  "homepage": "https://github.com/shakeib98/telegramBotPractice#readme"
+  "homepage": "https://github.com/shakeib98/telegramBotPractice#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0"
+  }
 }
