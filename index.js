@@ -28,8 +28,8 @@ bot.onText(/how are you?/i,(msg,match)=>{
 })
 
 bot.onText(/add two random numbers/i,(msg,match)=>{
-    let numberOne = Math.random()
-    let numberTwo = Math.random()
+    let numberOne = Math.random() * (1000- 0) + 0
+    let numberTwo = Math.random() * (1000- 0) + 0
     let result = numberOne + numberTwo
     bot.sendMessage(msg.chat.id,numberOne.toString()+ " " + "+" + " " +numberTwo.toString() + " =" + result.toString())
 })
