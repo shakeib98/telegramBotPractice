@@ -20,5 +20,14 @@ bot.onText(/start/, (msg, match) => {
     if(msg.chat.type=="private")
         bot.sendMessage(msg.chat.id, 'Hi. I am SSBot, I am a bot made by Shakeib just for fun and practice', opts);
 
-});
+})
+
+
+bot.on('message',msg=>{
+    let are = 'are'
+    if(msg.toLowerCase().toString().includes(are)){
+        bot.sendMessage(msg.chat.id,"I'm great")
+    }
+})
+
 
