@@ -23,11 +23,12 @@ bot.onText(/\/start/, (msg, match) => {
 })
 
 
-bot.on('message',(msg)=>{
-    let are = 'are'
-    if(msg.toLowerCase().toString().includes(are)){
-        bot.sendMessage(msg.chat.id,"I'm great")
-    }
+bot.onText(/how are you?/i,(msg,match)=>{
+    // let are = 'are'
+    // if(msg.toLowerCase().toString().includes(are)){
+    //     bot.sendMessage(msg.chat.id,"I'm great")
+    // }
+    bot.sendMessage(msg.chat.id,"I am Great!")
 })
 
 
