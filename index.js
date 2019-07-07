@@ -24,11 +24,19 @@ bot.onText(/\/start/, (msg, match) => {
 
 
 bot.onText(/how are you?/i,(msg,match)=>{
-    // let are = 'are'
-    // if(msg.toLowerCase().toString().includes(are)){
-    //     bot.sendMessage(msg.chat.id,"I'm great")
-    // }
     bot.sendMessage(msg.chat.id,"I am Great!")
 })
 
+bot.onText(/add two random numbers/i,(msg,match)=>{
+    let numberOne = Math.floor(Math.random())
+    let numberTwo = Math.floor(Math.random())
+    let result = numberOne + numberTwo
+    bot.sendMessage(msg.chat.id,numberOne.toString()+ " " + "+" + " " +numberTwo.toString() + " =" + result.toString())
+})
+
+bot.onText(/What date is today?/i,(msg,match)=>{
+    var datetime = new Date();
+    console.log(datetime);
+    bot.sendMessage(msg.chat.id,datetime.getDate().toString())
+})
 
