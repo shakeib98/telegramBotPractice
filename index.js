@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api')
 const token = '893235715:AAFHwINY2Ostw1eMtKixg8yUvS2Ypr3ZHrc'
 const bot = new TelegramBot(token, {polling: true})
 
-bot.onText(/start/, (msg, match) => {
+bot.onText(/\/start/, (msg, match) => {
     console.log(msg);
     const opts = {
         reply_to_message_id: msg.message_id,
